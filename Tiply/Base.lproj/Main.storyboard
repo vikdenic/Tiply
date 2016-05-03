@@ -105,7 +105,7 @@
                                                             <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <state key="highlighted" backgroundImage="circleLight">
-                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleColor" red="0.34901960784313724" green="0.50196078431372548" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="74a-eA-JB8"/>
@@ -126,7 +126,7 @@
                                                             <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <state key="highlighted" backgroundImage="circleLight">
-                                                            <color key="titleColor" red="0.396078431372549" green="0.4823529411764706" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleColor" red="0.34901960784313724" green="0.50196078431372548" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPb-Rg-8gs"/>
@@ -147,7 +147,7 @@
                                                             <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <state key="highlighted" backgroundImage="circleLight">
-                                                            <color key="titleColor" red="0.396078431372549" green="0.4823529411764706" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleColor" red="0.34901960784313724" green="0.50196078431372548" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdv-tZ-6JA"/>
@@ -168,7 +168,7 @@
                                                             <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <state key="highlighted" backgroundImage="circleLight">
-                                                            <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="titleColor" red="0.34901960784313724" green="0.50196078431372548" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OiX-YM-Kg5"/>
@@ -215,7 +215,7 @@
                                                             <action selector="onArrowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3r6-Lw-1Ro"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBN-Fw-Zda">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBN-Fw-Zda">
                                                         <rect key="frame" x="83" y="19" width="45" height="31"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="31"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

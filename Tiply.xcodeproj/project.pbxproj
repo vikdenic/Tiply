@@ -16,7 +16,21 @@
 		93BE2A121CD5642900956F44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A101CD5642900956F44 /* LaunchScreen.storyboard */; };
 		93BE2A1C1CD583BE00956F44 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE2A1B1CD583BE00956F44 /* RoundButton.swift */; };
 		93E35A1A1CD9466900AC2D4B /* Raleway-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 931037901CD8811100836FAC /* Raleway-Regular.otf */; };
+		93E35A221CD967F300AC2D4B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E35A211CD967F300AC2D4B /* NotificationCenter.framework */; };
+		93E35A251CD967F300AC2D4B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E35A241CD967F300AC2D4B /* TodayViewController.swift */; };
+		93E35A281CD967F300AC2D4B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E35A261CD967F300AC2D4B /* MainInterface.storyboard */; };
+		93E35A2C1CD967F300AC2D4B /* TiplyToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 93E35A1F1CD967F300AC2D4B /* TiplyToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93E35A2A1CD967F300AC2D4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93BE29FC1CD5642900956F44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93E35A1E1CD967F300AC2D4B;
+			remoteInfo = TiplyToday;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9310378C1CD87BE200836FAC /* Embed Frameworks */ = {
@@ -28,6 +42,17 @@
 				9310378B1CD87BE200836FAC /* Chameleon.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E35A301CD967F300AC2D4B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				93E35A2C1CD967F300AC2D4B /* TiplyToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -43,6 +68,11 @@
 		93BE2A111CD5642900956F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93BE2A131CD5642900956F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93BE2A1B1CD583BE00956F44 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; tabWidth = 2; };
+		93E35A1F1CD967F300AC2D4B /* TiplyToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TiplyToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E35A211CD967F300AC2D4B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		93E35A241CD967F300AC2D4B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		93E35A271CD967F300AC2D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		93E35A291CD967F300AC2D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93E35A1C1CD967F300AC2D4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E35A221CD967F300AC2D4B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +100,8 @@
 			children = (
 				93BE2A061CD5642900956F44 /* Tiply */,
 				931037891CD87BE200836FAC /* Chameleon.framework */,
+				93E35A231CD967F300AC2D4B /* TiplyToday */,
+				93E35A201CD967F300AC2D4B /* Frameworks */,
 				93BE2A051CD5642900956F44 /* Products */,
 			);
 			indentWidth = 2;
@@ -72,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				93BE2A041CD5642900956F44 /* Tiply.app */,
+				93E35A1F1CD967F300AC2D4B /* TiplyToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,11 +125,29 @@
 				93BE2A091CD5642900956F44 /* MainViewController.swift */,
 				93BE2A1B1CD583BE00956F44 /* RoundButton.swift */,
 				93BE2A0E1CD5642900956F44 /* Assets.xcassets */,
-				931037901CD8811100836FAC /* Raleway-Regular.otf */,
 				93BE2A101CD5642900956F44 /* LaunchScreen.storyboard */,
+				931037901CD8811100836FAC /* Raleway-Regular.otf */,
 				93BE2A131CD5642900956F44 /* Info.plist */,
 			);
 			path = Tiply;
+			sourceTree = "<group>";
+		};
+		93E35A201CD967F300AC2D4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93E35A211CD967F300AC2D4B /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93E35A231CD967F300AC2D4B /* TiplyToday */ = {
+			isa = PBXGroup;
+			children = (
+				93E35A241CD967F300AC2D4B /* TodayViewController.swift */,
+				93E35A261CD967F300AC2D4B /* MainInterface.storyboard */,
+				93E35A291CD967F300AC2D4B /* Info.plist */,
+			);
+			path = TiplyToday;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,15 +161,34 @@
 				93BE2A011CD5642900956F44 /* Frameworks */,
 				93BE2A021CD5642900956F44 /* Resources */,
 				9310378C1CD87BE200836FAC /* Embed Frameworks */,
+				93E35A301CD967F300AC2D4B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				93E35A2B1CD967F300AC2D4B /* PBXTargetDependency */,
 			);
 			name = Tiply;
 			productName = Tiply;
 			productReference = 93BE2A041CD5642900956F44 /* Tiply.app */;
 			productType = "com.apple.product-type.application";
+		};
+		93E35A1E1CD967F300AC2D4B /* TiplyToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E35A2D1CD967F300AC2D4B /* Build configuration list for PBXNativeTarget "TiplyToday" */;
+			buildPhases = (
+				93E35A1B1CD967F300AC2D4B /* Sources */,
+				93E35A1C1CD967F300AC2D4B /* Frameworks */,
+				93E35A1D1CD967F300AC2D4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TiplyToday;
+			productName = TiplyToday;
+			productReference = 93E35A1F1CD967F300AC2D4B /* TiplyToday.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -123,6 +201,9 @@
 				ORGANIZATIONNAME = vikzilla;
 				TargetAttributes = {
 					93BE2A031CD5642900956F44 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					93E35A1E1CD967F300AC2D4B = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -141,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				93BE2A031CD5642900956F44 /* Tiply */,
+				93E35A1E1CD967F300AC2D4B /* TiplyToday */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +239,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93E35A1D1CD967F300AC2D4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E35A281CD967F300AC2D4B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -170,7 +260,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93E35A1B1CD967F300AC2D4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E35A251CD967F300AC2D4B /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93E35A2B1CD967F300AC2D4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93E35A1E1CD967F300AC2D4B /* TiplyToday */;
+			targetProxy = 93E35A2A1CD967F300AC2D4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		93BE2A0B1CD5642900956F44 /* Main.storyboard */ = {
@@ -187,6 +293,14 @@
 				93BE2A111CD5642900956F44 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		93E35A261CD967F300AC2D4B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E35A271CD967F300AC2D4B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -298,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -308,6 +424,28 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vikzilla.Tiply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		93E35A2E1CD967F300AC2D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TiplyToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vikzilla.Tiply.TiplyToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		93E35A2F1CD967F300AC2D4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TiplyToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vikzilla.Tiply.TiplyToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -331,6 +469,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		93E35A2D1CD967F300AC2D4B /* Build configuration list for PBXNativeTarget "TiplyToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E35A2E1CD967F300AC2D4B /* Debug */,
+				93E35A2F1CD967F300AC2D4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
