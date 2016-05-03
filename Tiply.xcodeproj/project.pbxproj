@@ -16,6 +16,7 @@
 		93BE2A0F1CD5642900956F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A0E1CD5642900956F44 /* Assets.xcassets */; };
 		93BE2A121CD5642900956F44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A101CD5642900956F44 /* LaunchScreen.storyboard */; };
 		93BE2A1C1CD583BE00956F44 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE2A1B1CD583BE00956F44 /* RoundButton.swift */; };
+		93E35A1A1CD9466900AC2D4B /* Raleway-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 931037901CD8811100836FAC /* Raleway-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -154,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E35A1A1CD9466900AC2D4B /* Raleway-Regular.otf in Resources */,
 				93BE2A121CD5642900956F44 /* LaunchScreen.storyboard in Resources */,
 				93BE2A0F1CD5642900956F44 /* Assets.xcassets in Resources */,
 				9310378E1CD87FB600836FAC /* Raleway-Light.otf in Resources */,
