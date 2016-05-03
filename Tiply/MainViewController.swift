@@ -129,10 +129,10 @@ extension MainViewController: UITextFieldDelegate {
 
 extension UIColor {
   class func customGreen() -> UIColor {
-    return UIColor(red: 0/255.0, green: 103/255.0, blue: 30/255.0, alpha: 1.0)
+    return UIColor(red: 108/255.0, green: 167/255.0, blue: 122/255.0, alpha: 1.0)
   }
 
   class func customBlue() -> UIColor {
-    return UIColor(red: 0/255.0, green: 53.0/255.0, blue: 71.0/255.0, alpha: 1.0)
+    return UIColor(red: 108/255.0, green: 136.0/255.0, blue: 147.0/255.0, alpha: 1.0)
   }
 }
