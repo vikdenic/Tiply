@@ -75,6 +75,7 @@ class MainViewController: UIViewController {
   func calculateTip() {
     tipAmount = (billAmount * tipPercent) / Double(splitCount)
     print(tipAmount)
+    tipLabel.text = "$\(String(format:"%.2f", tipAmount))"
   }
 
 
@@ -115,4 +116,3 @@ extension MainViewController: UITextFieldDelegate {
 
   
 }
-
