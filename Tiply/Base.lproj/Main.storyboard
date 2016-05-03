@@ -41,13 +41,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lMM-DU-TbQ">
                                         <rect key="frame" x="0.0" y="134" width="600" height="165"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFx-5s-KTH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFx-5s-KTH">
                                                 <rect key="frame" x="223" y="0.0" width="154" height="65"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="240" verticalCompressionResistancePriority="760" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" placeholder="tap here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-8z-XP1">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="240" verticalCompressionResistancePriority="760" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" placeholder="tap here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-8z-XP1">
                                                 <rect key="frame" x="223" y="65" width="154" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>

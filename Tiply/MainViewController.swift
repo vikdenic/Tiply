@@ -30,10 +30,10 @@ class MainViewController: UIViewController {
     if splitCount == 1 {
       if sender.tag == 1 {
         splitCount++
+        return
       }
-    } else {
-      sender.tag == 0 ? splitCount-- : splitCount++
     }
+    sender.tag == 0 ? splitCount-- : splitCount++
   }
 
 
@@ -43,12 +43,10 @@ extension MainViewController: UITextFieldDelegate {
 
   @IBAction func onBillTextFieldEdited(textField: UITextField) {
     let range = (textField.text! as NSString).rangeOfString("$", options: .CaseInsensitiveSearch)
-
     if range.location != NSNotFound {
-      //don't add $ sign
-    } else {
-      textField.text = "$" + textField.text!
+      return
     }
+    textField.text = "$" + textField.text!
   }
 
   func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
@@ -56,16 +54,17 @@ extension MainViewController: UITextFieldDelegate {
     let newString = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
     let separatedStrings = newString.componentsSeparatedByString(".")
 
-    if separatedStrings.count > 2 {
+    if separatedStrings.count > 2 { //prevent mulitple decimals
       return false
     }
 
-    //two decimal places
-    if separatedStrings.count >= 2 {
+    if separatedStrings.count >= 2 { //limit to two decimal places
       let sepStr = separatedStrings[1]
       return !(sepStr.characters.count > 2)
     }
     return true
   }
+
+  
 }
 
