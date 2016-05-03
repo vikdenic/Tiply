@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Chameleon
 
 class MainViewController: UIViewController {
 
@@ -47,6 +48,7 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     tipButtonTwo.selected = true
+    view.backgroundColor = GradientColor(.TopToBottom, frame: view.frame, colors: [.customGreen(), .customBlue()])
   }
 
   @IBAction func onArrowTapped(sender: UIButton) {
@@ -122,4 +124,15 @@ extension MainViewController: UITextFieldDelegate {
   }
 
   
+}
+
+
+extension UIColor {
+  class func customGreen() -> UIColor {
+    return UIColor(red: 108/255.0, green: 167/255.0, blue: 122/255.0, alpha: 1.0)
+  }
+
+  class func customBlue() -> UIColor {
+    return UIColor(red: 108/255.0, green: 136.0/255.0, blue: 147.0/255.0, alpha: 1.0)
+  }
 }
