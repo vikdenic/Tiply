@@ -15,16 +15,30 @@ class MainViewController: UIViewController {
   @IBOutlet var tipLabel: UILabel!
   @IBOutlet var totalLabel: UILabel!
   @IBOutlet var splitLabel: UILabel!
+  @IBOutlet var tipButtonTwo: RoundButton!
 
-  var tipPercent = 0.15
+  var tipAmount = 0.0
+  var total = 0.0
+  var billAmount = 0.0 {
+    didSet {
+      calculateTip()
+    }
+  }
+  var tipPercent = 0.15 {
+    didSet {
+      calculateTip()
+    }
+  }
   var splitCount = 1 {
     didSet {
+      calculateTip()
       splitLabel.text = "\(splitCount)"
     }
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    tipButtonTwo.selected = true
   }
 
   @IBAction func onArrowTapped(sender: UIButton) {
@@ -58,12 +72,23 @@ class MainViewController: UIViewController {
     button.selected = true
   }
 
+  func calculateTip() {
+    tipAmount = (billAmount * tipPercent) / Double(splitCount)
+    print(tipAmount)
+  }
+
 
 }
 
 extension MainViewController: UITextFieldDelegate {
 
   @IBAction func onBillTextFieldEdited(textField: UITextField) {
+    //update values
+    if let someAmount = Double(String(textField.text!.characters.dropFirst())) {
+      billAmount = someAmount
+    }
+
+    //append $ prefix
     let range = (textField.text! as NSString).rangeOfString("$", options: .CaseInsensitiveSearch)
     if range.location != NSNotFound {
       return
@@ -84,6 +109,7 @@ extension MainViewController: UITextFieldDelegate {
       let sepStr = separatedStrings[1]
       return !(sepStr.characters.count > 2)
     }
+
     return true
   }
 
