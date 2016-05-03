@@ -201,13 +201,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="16n-bF-H4b">
-                                                <rect key="frame" x="191" y="68" width="218" height="69"/>
+                                                <rect key="frame" x="195" y="68" width="211" height="69"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-pO-pRl">
-                                                        <rect key="frame" x="0.0" y="18" width="34" height="34"/>
+                                                        <rect key="frame" x="0.0" y="18" width="33" height="33"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="34" id="IdF-EW-4id"/>
-                                                            <constraint firstAttribute="width" constant="34" id="pXb-II-KSd"/>
+                                                            <constraint firstAttribute="height" constant="33" id="IdF-EW-4id"/>
+                                                            <constraint firstAttribute="width" constant="33" id="pXb-II-KSd"/>
                                                             <constraint firstAttribute="width" secondItem="yWS-pO-pRl" secondAttribute="height" multiplier="1:1" id="uxh-Gl-qFI"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="down"/>
@@ -215,18 +215,18 @@
                                                             <action selector="onArrowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3r6-Lw-1Ro"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBN-Fw-Zda">
-                                                        <rect key="frame" x="84" y="19" width="50" height="31"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBN-Fw-Zda">
+                                                        <rect key="frame" x="83" y="19" width="45" height="31"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="31"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxt-ym-dOF">
-                                                        <rect key="frame" x="184" y="18" width="34" height="34"/>
+                                                        <rect key="frame" x="178" y="18" width="33" height="33"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="34" id="9IS-lo-rU0"/>
+                                                            <constraint firstAttribute="width" constant="33" id="9IS-lo-rU0"/>
                                                             <constraint firstAttribute="width" secondItem="hxt-ym-dOF" secondAttribute="height" multiplier="1:1" id="ZN9-ge-Kp2"/>
-                                                            <constraint firstAttribute="height" constant="34" id="ZcC-ew-uFq"/>
+                                                            <constraint firstAttribute="height" constant="33" id="ZcC-ew-uFq"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="up"/>
                                                         <connections>
