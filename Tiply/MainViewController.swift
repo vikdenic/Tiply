@@ -17,8 +17,16 @@ class MainViewController: UIViewController {
   @IBOutlet var splitLabel: UILabel!
   @IBOutlet var tipButtonTwo: RoundButton!
 
-  var tipAmount = 0.0
-  var total = 0.0
+  var tipAmount = 0.0 {
+    didSet {
+      tipLabel.text = "$\(String(format:"%.2f", tipAmount))"
+    }
+  }
+  var total = 0.0 {
+    didSet {
+      totalLabel.text = "Total: $\(String(format:"%.2f", total))"
+    }
+  }
   var billAmount = 0.0 {
     didSet {
       calculateTip()
@@ -74,8 +82,7 @@ class MainViewController: UIViewController {
 
   func calculateTip() {
     tipAmount = (billAmount * tipPercent) / Double(splitCount)
-    print(tipAmount)
-    tipLabel.text = "$\(String(format:"%.2f", tipAmount))"
+    total = billAmount + (tipAmount * Double(splitCount))
   }
 
 
