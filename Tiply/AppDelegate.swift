@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        return true
+      application.statusBarStyle = .LightContent
+      return true
     }
 
     func applicationWillResignActive(application: UIApplication) {

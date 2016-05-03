@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9310378A1CD87BE200836FAC /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931037891CD87BE200836FAC /* Chameleon.framework */; };
 		9310378B1CD87BE200836FAC /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 931037891CD87BE200836FAC /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9310378E1CD87FB600836FAC /* Raleway-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9310378D1CD87FB600836FAC /* Raleway-Light.otf */; };
 		93BE2A081CD5642900956F44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE2A071CD5642900956F44 /* AppDelegate.swift */; };
 		93BE2A0A1CD5642900956F44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE2A091CD5642900956F44 /* MainViewController.swift */; };
 		93BE2A0D1CD5642900956F44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A0B1CD5642900956F44 /* Main.storyboard */; };
@@ -33,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		931037891CD87BE200836FAC /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
+		9310378D1CD87FB600836FAC /* Raleway-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Light.otf"; path = "../../Relevant/MMA/Engineerium/Raleway/Raleway-Light.otf"; sourceTree = "<group>"; };
+		9310378F1CD87FC600836FAC /* Raleway-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.otf"; sourceTree = "<group>"; };
+		931037901CD8811100836FAC /* Raleway-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.otf"; sourceTree = "<group>"; };
 		93BE2A041CD5642900956F44 /* Tiply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiply.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BE2A071CD5642900956F44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93BE2A091CD5642900956F44 /* MainViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -82,6 +86,9 @@
 				93BE2A091CD5642900956F44 /* MainViewController.swift */,
 				93BE2A1B1CD583BE00956F44 /* RoundButton.swift */,
 				93BE2A0E1CD5642900956F44 /* Assets.xcassets */,
+				9310378D1CD87FB600836FAC /* Raleway-Light.otf */,
+				9310378F1CD87FC600836FAC /* Raleway-ExtraLight.otf */,
+				931037901CD8811100836FAC /* Raleway-Regular.otf */,
 				93BE2A101CD5642900956F44 /* LaunchScreen.storyboard */,
 				93BE2A131CD5642900956F44 /* Info.plist */,
 			);
@@ -149,6 +156,7 @@
 			files = (
 				93BE2A121CD5642900956F44 /* LaunchScreen.storyboard in Resources */,
 				93BE2A0F1CD5642900956F44 /* Assets.xcassets in Resources */,
+				9310378E1CD87FB600836FAC /* Raleway-Light.otf in Resources */,
 				93BE2A0D1CD5642900956F44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
