@@ -87,6 +87,10 @@ class MainViewController: UIViewController {
     total = billAmount + (tipAmount * Double(splitCount))
   }
 
+  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    view.endEditing(true)
+  }
+
 
 }
 
@@ -96,6 +100,8 @@ extension MainViewController: UITextFieldDelegate {
     //update values
     if let someAmount = Double(String(textField.text!.characters.dropFirst())) {
       billAmount = someAmount
+    } else {
+      billAmount = 0.0
     }
 
     //append $ prefix
