@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
   @IBOutlet var totalLabel: UILabel!
   @IBOutlet var splitLabel: UILabel!
 
+  var tipPercent = 0.15
   var splitCount = 1 {
     didSet {
       splitLabel.text = "\(splitCount)"
@@ -30,10 +31,31 @@ class MainViewController: UIViewController {
     if splitCount == 1 {
       if sender.tag == 1 {
         splitCount++
-        return
       }
+      return
     }
     sender.tag == 0 ? splitCount-- : splitCount++
+  }
+
+  @IBAction func onTipButtonTapped(sender: RoundButton) {
+    selectButton(sender)
+    switch sender.tag {
+    case 0:
+      tipPercent = 0.10
+    case 2:
+      tipPercent = 0.20
+    case 3:
+      tipPercent = 0.25
+    default:
+      tipPercent = 0.15
+    }
+  }
+
+  func selectButton(button : RoundButton) {
+    for view in gratStackView.arrangedSubviews {
+      (view as! RoundButton).selected = false
+    }
+    button.selected = true
   }
 
 

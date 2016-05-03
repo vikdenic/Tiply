@@ -22,16 +22,16 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TkK-6Y-jfQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="134"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="135"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Each Should Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awU-Dk-dWY">
-                                                <rect key="frame" x="192" y="0.0" width="216" height="67"/>
+                                                <rect key="frame" x="192" y="0.0" width="216" height="68"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="208-sk-1m8">
-                                                <rect key="frame" x="259" y="67" width="82" height="67"/>
+                                                <rect key="frame" x="259" y="68" width="82" height="68"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -39,16 +39,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lMM-DU-TbQ">
-                                        <rect key="frame" x="0.0" y="134" width="600" height="165"/>
+                                        <rect key="frame" x="0.0" y="135" width="600" height="166"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFx-5s-KTH">
-                                                <rect key="frame" x="223" y="0.0" width="154" height="65"/>
+                                                <rect key="frame" x="223" y="0.0" width="154" height="66"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="240" verticalCompressionResistancePriority="760" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" placeholder="tap here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-8z-XP1">
-                                                <rect key="frame" x="223" y="65" width="154" height="56"/>
+                                                <rect key="frame" x="223" y="66" width="154" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <connections>
@@ -57,7 +57,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total: $0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bib-CK-kCe">
-                                                <rect key="frame" x="249" y="121" width="104" height="44"/>
+                                                <rect key="frame" x="249" y="122" width="104" height="45"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -68,7 +68,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wML-U6-Ete">
-                                        <rect key="frame" x="0.0" y="298" width="600" height="149"/>
+                                        <rect key="frame" x="0.0" y="301" width="600" height="144"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="% Gratuity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhn-dO-Oop">
                                                 <rect key="frame" x="233" y="0.0" width="136" height="67"/>
@@ -77,48 +77,88 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g4c-ef-Pza">
-                                                <rect key="frame" x="10" y="67" width="580" height="82"/>
+                                                <rect key="frame" x="10" y="67" width="580" height="77"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rno-gc-tY5" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
-                                                        <color key="backgroundColor" red="0.396078431372549" green="0.4823529411764706" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <state key="normal" title="10">
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="10" backgroundImage="circleDark">
                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <state key="selected" backgroundImage="circleLight">
+                                                            <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="circleLight">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="74a-eA-JB8"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVx-s7-YSk" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
-                                                        <rect key="frame" x="166" y="0.0" width="82" height="82"/>
-                                                        <color key="backgroundColor" red="0.396078431372549" green="0.4823529411764706" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <button opaque="NO" tag="1" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVx-s7-YSk" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
+                                                        <rect key="frame" x="168" y="0.0" width="77" height="77"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="TVx-s7-YSk" secondAttribute="height" multiplier="1:1" id="j4j-sL-SfC"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <state key="normal" title="15">
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="15" backgroundImage="circleDark">
                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <state key="selected" backgroundImage="circleLight">
+                                                            <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="circleLight">
+                                                            <color key="titleColor" red="0.396078431372549" green="0.4823529411764706" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPb-Rg-8gs"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj4-Ue-5jL" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
-                                                        <rect key="frame" x="332" y="0.0" width="82" height="82"/>
-                                                        <color key="backgroundColor" red="0.396078431372549" green="0.4823529411764706" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <button opaque="NO" tag="2" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj4-Ue-5jL" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
+                                                        <rect key="frame" x="336" y="0.0" width="77" height="77"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="oj4-Ue-5jL" secondAttribute="height" multiplier="1:1" id="Tsx-oo-khi"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <state key="normal" title="20">
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="20" backgroundImage="circleDark">
                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <state key="selected" backgroundImage="circleLight">
+                                                            <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="circleLight">
+                                                            <color key="titleColor" red="0.396078431372549" green="0.4823529411764706" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdv-tZ-6JA"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjJ-wk-OEI" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
-                                                        <rect key="frame" x="499" y="0.0" width="82" height="82"/>
-                                                        <color key="backgroundColor" red="0.396078431372549" green="0.4823529411764706" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <button opaque="NO" tag="3" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjJ-wk-OEI" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
+                                                        <rect key="frame" x="503" y="0.0" width="77" height="77"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="VjJ-wk-OEI" secondAttribute="height" multiplier="1:1" id="W2v-Mw-YM7"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <state key="normal" title="25">
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="25" backgroundImage="circleDark">
                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <state key="selected" backgroundImage="circleLight">
+                                                            <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="circleLight">
+                                                            <color key="titleColor" red="0.32549019610000002" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OiX-YM-Kg5"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -138,19 +178,19 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="75D-zw-irl">
-                                        <rect key="frame" x="0.0" y="447" width="600" height="134"/>
+                                        <rect key="frame" x="0.0" y="445" width="600" height="135"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Split Between" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg2-j0-blD">
-                                                <rect key="frame" x="209" y="0.0" width="183" height="67"/>
+                                                <rect key="frame" x="209" y="0.0" width="183" height="68"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="16n-bF-H4b">
-                                                <rect key="frame" x="216" y="67" width="168" height="67"/>
+                                                <rect key="frame" x="216" y="68" width="168" height="68"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-pO-pRl">
-                                                        <rect key="frame" x="0.0" y="20" width="27" height="27"/>
+                                                        <rect key="frame" x="0.0" y="21" width="27" height="27"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="yWS-pO-pRl" secondAttribute="height" multiplier="1:1" id="uxh-Gl-qFI"/>
                                                         </constraints>
@@ -166,7 +206,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxt-ym-dOF">
-                                                        <rect key="frame" x="141" y="20" width="27" height="27"/>
+                                                        <rect key="frame" x="141" y="21" width="27" height="27"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="hxt-ym-dOF" secondAttribute="height" multiplier="1:1" id="ZN9-ge-Kp2"/>
                                                         </constraints>
@@ -204,6 +244,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circleDark" width="41" height="41"/>
+        <image name="circleLight" width="41" height="41"/>
         <image name="down" width="27" height="24"/>
         <image name="up" width="27" height="24"/>
     </resources>
