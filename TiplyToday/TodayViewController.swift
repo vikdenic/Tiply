@@ -36,6 +36,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   override func viewDidLoad() {
     super.viewDidLoad()
     percent15Button.selected = true
+    view.updateConstraints()
   }
 
   @IBAction func onPercentButtonTapped(sender: UIButton) {

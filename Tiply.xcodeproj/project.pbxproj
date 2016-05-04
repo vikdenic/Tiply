@@ -435,7 +435,7 @@
 				INFOPLIST_FILE = TiplyToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vikzilla.Tiply.TiplyToday;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TiplyToday;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -446,7 +446,7 @@
 				INFOPLIST_FILE = TiplyToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vikzilla.Tiply.TiplyToday;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TiplyToday;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
