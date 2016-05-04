@@ -11,11 +11,22 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
 
+  @IBOutlet var billLabel: UILabel!
+  @IBOutlet var tipLabel: UILabel!
+
   @IBOutlet var percentButtons: [UIButton]!
   @IBOutlet var percent15Button: UIButton!
 
+  var tipPercent = 0.15
   var billAmount = 0.0
-  var billString = "0.00"
+
+  var billString = "" {
+    didSet {
+      billAmount = Double(billString)!
+      billLabel.text = "Bill: $\(String(format:"%.2f", billAmount))"
+      tipLabel.text = "Tip: $\(String(format:"%.2f", (billAmount * tipPercent)))"
+    }
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,6 +34,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   }
 
   @IBAction func onPercentButtonTapped(sender: UIButton) {
+    tipPercent = 0.01 * Double(sender.tag)
+    print(tipPercent)
+    billString = billString + ""
     for button in percentButtons {
       button.selected = false
     }
@@ -55,7 +69,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   }
 
   @IBAction func onClearButtonTapped(sender: UIButton) {
-    billString = "0.00"
+    billString = "0"
   }
     
   func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
