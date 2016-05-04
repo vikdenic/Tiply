@@ -22,8 +22,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
   var billString = "" {
     didSet {
-      billAmount = Double(billString)!
-      billLabel.text = "Bill: $\(String(format:"%.2f", billAmount))"
+      guard let someAmount = Double(billString) else {
+        billLabel.text = "Bill: $0"
+        tipLabel.text = "Tip: $0"
+        return
+      }
+      billAmount = someAmount
+      billLabel.text = "Bill: $\(billString)"
       tipLabel.text = "Tip: $\(String(format:"%.2f", (billAmount * tipPercent)))"
     }
   }
@@ -65,11 +70,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     if !billString.containsString(".") {
       billString += "."
     }
-    print(billString)
+
+    if billString == "." {
+      billLabel.text = "Bill: $."
+    }
   }
 
   @IBAction func onClearButtonTapped(sender: UIButton) {
-    billString = "0"
+    billString = ""
   }
     
   func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
