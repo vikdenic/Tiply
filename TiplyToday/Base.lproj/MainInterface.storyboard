@@ -1,50 +1,213 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
         <scene sceneID="cwh-vc-ff4">
             <objects>
-                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="TiplyToday" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
-                                <rect key="frame" x="20" y="8" width="280" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bill: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gp-qx-VM1">
+                                <rect key="frame" x="16" y="8" width="66" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xxx-sF-4l7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-IC-lNL">
+                                <rect key="frame" x="231" y="8" width="63" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XPk-gI-A7s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JHg-RE-U8i">
+                                <rect key="frame" x="12" y="39" width="292" height="136"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JUl-pU-9CI">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVR-Sp-oUu">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="34"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-Io-UAy">
+                                                <rect key="frame" x="74" y="0.0" width="72" height="34"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbK-2e-Hkp">
+                                                <rect key="frame" x="147" y="0.0" width="73" height="34"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCU-uZ-bw8">
+                                                <rect key="frame" x="220" y="0.0" width="72" height="34"/>
+                                                <color key="backgroundColor" red="0.34901960780000002" green="0.57647058819999997" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="25%">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yjG-ya-LlR">
+                                        <rect key="frame" x="0.0" y="35" width="292" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYS-yw-X6K">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="33"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNB-fw-Rdw">
+                                                <rect key="frame" x="74" y="0.0" width="72" height="33"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVh-8c-OHh">
+                                                <rect key="frame" x="147" y="0.0" width="73" height="33"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYh-xc-pev">
+                                                <rect key="frame" x="220" y="0.0" width="72" height="33"/>
+                                                <color key="backgroundColor" red="0.34901960780000002" green="0.57647058819999997" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="20%">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jd6-Z6-EJt">
+                                        <rect key="frame" x="0.0" y="69" width="292" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNh-5u-iYr">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="34"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9G-4V-Nwu">
+                                                <rect key="frame" x="74" y="0.0" width="72" height="34"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5J-dr-GcP">
+                                                <rect key="frame" x="147" y="0.0" width="73" height="34"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLF-5a-Jdh">
+                                                <rect key="frame" x="220" y="0.0" width="72" height="34"/>
+                                                <color key="backgroundColor" red="0.34901960780000002" green="0.57647058819999997" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="15%">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="E2r-X5-Vvp">
+                                        <rect key="frame" x="0.0" y="103" width="292" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22V-wM-BXA">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="33"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663793103446" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAM-zH-btJ">
+                                                <rect key="frame" x="74" y="0.0" width="72" height="33"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                                <state key="normal" title=".">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aui-ja-P3W">
+                                                <rect key="frame" x="147" y="0.0" width="73" height="33"/>
+                                                <color key="backgroundColor" red="0.65490196078431373" green="0.35686274509803922" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-JA-2UQ">
+                                                <rect key="frame" x="220" y="0.0" width="72" height="33"/>
+                                                <color key="backgroundColor" red="0.34901960780000002" green="0.57647058819999997" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="10%">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="20" symbolic="YES" id="0Q0-KW-PJ6"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="20" symbolic="YES" id="6Vq-gs-PHe"/>
-                            <constraint firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="20" symbolic="YES" id="L8K-9R-egU"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="20" symbolic="YES" id="mYS-Cv-VNx"/>
+                            <constraint firstItem="2gp-qx-VM1" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="Kph-ZU-w6I"/>
+                            <constraint firstItem="Txd-IC-lNL" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="Rpj-zB-HXC"/>
+                            <constraint firstItem="JHg-RE-U8i" firstAttribute="top" secondItem="2gp-qx-VM1" secondAttribute="bottom" constant="10" id="SEa-rb-vYX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JHg-RE-U8i" secondAttribute="trailing" id="Yaw-em-p4o"/>
+                            <constraint firstItem="Txd-IC-lNL" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" constant="-10" id="fhC-s8-ehN"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="JHg-RE-U8i" secondAttribute="bottom" id="t4k-Fj-gOO"/>
+                            <constraint firstItem="JHg-RE-U8i" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-4" id="uln-Ux-cMv"/>
+                            <constraint firstItem="2gp-qx-VM1" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="ybK-hj-pId"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="174"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="37"/>
+                    <size key="freeformSize" width="320" height="175"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="285"/>
+            <point key="canvasLocation" x="516" y="284.5"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

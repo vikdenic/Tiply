@@ -125,7 +125,6 @@ extension MainViewController: UITextFieldDelegate {
       let sepStr = separatedStrings[1]
       return !(sepStr.characters.count > 2)
     }
-
     return true
   }
 
@@ -141,4 +140,6 @@ extension UIColor {
   class func customBlue() -> UIColor {
     return UIColor(red: 108/255.0, green: 136.0/255.0, blue: 147.0/255.0, alpha: 1.0)
   }
+
+
 }
