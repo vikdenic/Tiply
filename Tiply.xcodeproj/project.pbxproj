@@ -12,7 +12,6 @@
 		93BE2A081CD5642900956F44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE2A071CD5642900956F44 /* AppDelegate.swift */; };
 		93BE2A0A1CD5642900956F44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE2A091CD5642900956F44 /* MainViewController.swift */; };
 		93BE2A0D1CD5642900956F44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A0B1CD5642900956F44 /* Main.storyboard */; };
-		93BE2A0F1CD5642900956F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A0E1CD5642900956F44 /* Assets.xcassets */; };
 		93BE2A121CD5642900956F44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A101CD5642900956F44 /* LaunchScreen.storyboard */; };
 		93BE2A1C1CD583BE00956F44 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE2A1B1CD583BE00956F44 /* RoundButton.swift */; };
 		93E35A1A1CD9466900AC2D4B /* Raleway-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 931037901CD8811100836FAC /* Raleway-Regular.otf */; };
@@ -20,6 +19,8 @@
 		93E35A251CD967F300AC2D4B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E35A241CD967F300AC2D4B /* TodayViewController.swift */; };
 		93E35A281CD967F300AC2D4B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E35A261CD967F300AC2D4B /* MainInterface.storyboard */; };
 		93E35A2C1CD967F300AC2D4B /* TiplyToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 93E35A1F1CD967F300AC2D4B /* TiplyToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		93E35A351CD9B81B00AC2D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A0E1CD5642900956F44 /* Assets.xcassets */; };
+		93E35A361CD9B91300AC2D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A0E1CD5642900956F44 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,7 +235,7 @@
 			files = (
 				93E35A1A1CD9466900AC2D4B /* Raleway-Regular.otf in Resources */,
 				93BE2A121CD5642900956F44 /* LaunchScreen.storyboard in Resources */,
-				93BE2A0F1CD5642900956F44 /* Assets.xcassets in Resources */,
+				93E35A361CD9B91300AC2D4B /* Assets.xcassets in Resources */,
 				93BE2A0D1CD5642900956F44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E35A351CD9B81B00AC2D4B /* Assets.xcassets in Resources */,
 				93E35A281CD967F300AC2D4B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
