@@ -19,19 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rub-Qh-KAl">
-                                <rect key="frame" x="16" y="0.0" width="288" height="175"/>
+                                <rect key="frame" x="36" y="0.0" width="268" height="175"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-Ub-pb0">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="23"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="23"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill: $0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gp-qx-VM1">
-                                                <rect key="frame" x="0.0" y="0.0" width="144" height="23"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134" height="23"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip: $0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-IC-lNL">
-                                                <rect key="frame" x="144" y="0.0" width="144" height="23"/>
+                                                <rect key="frame" x="134" y="0.0" width="134" height="23"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -39,37 +39,46 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JHg-RE-U8i">
-                                        <rect key="frame" x="0.0" y="28" width="288" height="147"/>
+                                        <rect key="frame" x="0.0" y="28" width="268" height="147"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JUl-pU-9CI">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="268" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVR-Sp-oUu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
                                                         <state key="normal" title="7">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="nIW-fQ-CgH"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-Io-UAy">
-                                                        <rect key="frame" x="72.5" y="0.0" width="71" height="36"/>
+                                                        <rect key="frame" x="67.5" y="0.0" width="66" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
                                                         <state key="normal" title="8">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="syr-Gd-A3j"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbK-2e-Hkp">
-                                                        <rect key="frame" x="144.5" y="0.0" width="71.5" height="36"/>
+                                                        <rect key="frame" x="134.5" y="0.0" width="66.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
                                                         <state key="normal" title="9">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="8bH-Vl-kwJ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCU-uZ-bw8">
-                                                        <rect key="frame" x="217" y="0.0" width="71" height="36"/>
+                                                        <rect key="frame" x="202" y="0.0" width="66" height="36"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -87,34 +96,43 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yjG-ya-LlR">
-                                                <rect key="frame" x="0.0" y="37" width="288" height="36"/>
+                                                <rect key="frame" x="0.0" y="37" width="268" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYS-yw-X6K">
-                                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <state key="normal" title="4">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="vZz-oR-x8v"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNB-fw-Rdw">
-                                                        <rect key="frame" x="72.5" y="0.0" width="71" height="36"/>
+                                                        <rect key="frame" x="67.5" y="0.0" width="66" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <state key="normal" title="5">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="ukW-4C-d5f"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVh-8c-OHh">
-                                                        <rect key="frame" x="144.5" y="0.0" width="71.5" height="36"/>
+                                                        <rect key="frame" x="134.5" y="0.0" width="66.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <state key="normal" title="6">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="d7o-We-LDf"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYh-xc-pev">
-                                                        <rect key="frame" x="217" y="0.0" width="71" height="36"/>
+                                                        <rect key="frame" x="202" y="0.0" width="66" height="36"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -131,34 +149,43 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jd6-Z6-EJt">
-                                                <rect key="frame" x="0.0" y="74" width="288" height="36"/>
+                                                <rect key="frame" x="0.0" y="74" width="268" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNh-5u-iYr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="LLi-Nq-BUs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9G-4V-Nwu">
-                                                        <rect key="frame" x="72.5" y="0.0" width="71" height="36"/>
+                                                        <rect key="frame" x="67.5" y="0.0" width="66" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="5eh-E3-21d"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5J-dr-GcP">
-                                                        <rect key="frame" x="144.5" y="0.0" width="71.5" height="36"/>
+                                                        <rect key="frame" x="134.5" y="0.0" width="66.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="GmX-Yk-dht"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLF-5a-Jdh">
-                                                        <rect key="frame" x="217" y="0.0" width="71" height="36"/>
+                                                        <rect key="frame" x="202" y="0.0" width="66" height="36"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -175,34 +202,43 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="E2r-X5-Vvp">
-                                                <rect key="frame" x="0.0" y="111" width="288" height="36"/>
+                                                <rect key="frame" x="0.0" y="111" width="268" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22V-wM-BXA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663793103446" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCalculatorButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="vq1-dw-ovX"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAM-zH-btJ">
-                                                        <rect key="frame" x="72.5" y="0.0" width="71" height="36"/>
+                                                        <rect key="frame" x="67.5" y="0.0" width="66" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onDecimalPointTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Bin-u7-kMX"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aui-ja-P3W">
-                                                        <rect key="frame" x="144.5" y="0.0" width="71.5" height="36"/>
+                                                        <rect key="frame" x="134.5" y="0.0" width="66.5" height="36"/>
                                                         <color key="backgroundColor" red="0.65490196078431373" green="0.35686274509803922" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
                                                         <state key="normal" title="C">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onClearButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="RBO-m3-YiY"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-JA-2UQ">
-                                                        <rect key="frame" x="217" y="0.0" width="71" height="36"/>
+                                                        <rect key="frame" x="202" y="0.0" width="66" height="36"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -224,7 +260,7 @@
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Rub-Qh-KAl" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="CfX-zN-XmK"/>
+                            <constraint firstItem="Rub-Qh-KAl" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="20" id="CfX-zN-XmK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rub-Qh-KAl" secondAttribute="trailing" id="DTz-T1-njn"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="Rub-Qh-KAl" secondAttribute="bottom" id="S4Z-PV-o1w"/>
                             <constraint firstItem="Rub-Qh-KAl" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="frz-Uv-S1e"/>

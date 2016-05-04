@@ -14,6 +14,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   @IBOutlet var percentButtons: [UIButton]!
   @IBOutlet var percent15Button: UIButton!
 
+  var billAmount = 0.0
+  var billString = "0.00"
+
   override func viewDidLoad() {
     super.viewDidLoad()
     percent15Button.selected = true
@@ -25,6 +28,35 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     sender.selected = true
   }
+
+  @IBAction func onCalculatorButtonTapped(sender: UIButton) {
+
+    if !billString.containsString(".") {
+      billString += "\(sender.tag)"
+      print(billString)
+    } else {
+      let separatedStrings = billString.componentsSeparatedByString(".")
+      if separatedStrings.count >= 2 { //limit to two decimal places
+        let sepStr = separatedStrings[1]
+        if (sepStr.characters.count >= 2) {
+          return
+        }
+        billString += "\(sender.tag)"
+        print(billString)
+      }
+    }
+  }
+
+  @IBAction func onDecimalPointTapped(sender: UIButton) {
+    if !billString.containsString(".") {
+      billString += "."
+    }
+    print(billString)
+  }
+
+  @IBAction func onClearButtonTapped(sender: UIButton) {
+    billString = "0.00"
+  }
     
   func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
     // Perform any setup necessary in order to update the view.
@@ -35,5 +67,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     completionHandler(NCUpdateResult.NewData)
   }
-    
+
+  func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
+    return UIEdgeInsetsZero
+  }
+
 }

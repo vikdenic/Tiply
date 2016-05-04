@@ -117,7 +117,7 @@ extension MainViewController: UITextFieldDelegate {
     let newString = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
     let separatedStrings = newString.componentsSeparatedByString(".")
 
-    if separatedStrings.count > 2 { //prevent mulitple decimals
+    if separatedStrings.count > 2 { //prevent multiple decimals
       return false
     }
 
