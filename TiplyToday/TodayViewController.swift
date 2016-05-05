@@ -38,18 +38,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   override func viewDidLoad() {
     super.viewDidLoad()
     percent15Button.selected = true
-    onCalculatorButtonTapped(zeroButton)
-    print("vdl")
-  }
 
-  override func viewWillAppear(animated: Bool) {
-    super.viewWillAppear(animated)
-    print("vwa")
-  }
-
-  override func viewDidAppear(animated: Bool) {
-    super.viewDidAppear(animated)
-    print("vda")
+    outterStackView.frame = view.frame
   }
 
   @IBAction func onPercentButtonTapped(sender: UIButton) {
