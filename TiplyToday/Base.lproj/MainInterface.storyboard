@@ -19,19 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" horizontalCompressionResistancePriority="500" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rub-Qh-KAl">
-                                <rect key="frame" x="47" y="0.0" width="273" height="175"/>
+                                <rect key="frame" x="16.5" y="0.0" width="303.5" height="175"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-Ub-pb0">
-                                        <rect key="frame" x="0.0" y="0.0" width="273" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="303.5" height="23.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill: $0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gp-qx-VM1">
-                                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="23.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="19"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip: $0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-IC-lNL">
-                                                <rect key="frame" x="145" y="0.0" width="127.5" height="23.5"/>
+                                                <rect key="frame" x="162" y="0.0" width="141.5" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="19"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -39,13 +39,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JHg-RE-U8i">
-                                        <rect key="frame" x="0.0" y="28" width="273" height="146.5"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="303.5" height="146.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JUl-pU-9CI">
-                                                <rect key="frame" x="0.0" y="0.0" width="273" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="303.5" height="35.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVR-Sp-oUu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="35.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="35.5"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="7">
@@ -56,7 +56,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-Io-UAy">
-                                                        <rect key="frame" x="68" y="0.0" width="67.5" height="35.5"/>
+                                                        <rect key="frame" x="76" y="0.0" width="75.5" height="35.5"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="8">
@@ -67,7 +67,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbK-2e-Hkp">
-                                                        <rect key="frame" x="137" y="0.0" width="67.5" height="35.5"/>
+                                                        <rect key="frame" x="152.5" y="0.0" width="75" height="35.5"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="9">
@@ -78,7 +78,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCU-uZ-bw8">
-                                                        <rect key="frame" x="205" y="0.0" width="67.5" height="35.5"/>
+                                                        <rect key="frame" x="228.5" y="0.0" width="75" height="35.5"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -96,10 +96,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yjG-ya-LlR">
-                                                <rect key="frame" x="0.0" y="36" width="273" height="36"/>
+                                                <rect key="frame" x="0.0" y="36.5" width="303.5" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYS-yw-X6K">
-                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="4">
@@ -110,7 +110,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNB-fw-Rdw">
-                                                        <rect key="frame" x="68" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="76" y="0.0" width="75.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="5">
@@ -121,7 +121,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVh-8c-OHh">
-                                                        <rect key="frame" x="137" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="152.5" y="0.0" width="75" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="6">
@@ -132,7 +132,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYh-xc-pev">
-                                                        <rect key="frame" x="205" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="228.5" y="0.0" width="75" height="36"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -149,10 +149,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jd6-Z6-EJt">
-                                                <rect key="frame" x="0.0" y="73" width="273" height="36"/>
+                                                <rect key="frame" x="0.0" y="73.5" width="303.5" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNh-5u-iYr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="1">
@@ -163,7 +163,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9G-4V-Nwu">
-                                                        <rect key="frame" x="68" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="76" y="0.0" width="75.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="2">
@@ -174,7 +174,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5J-dr-GcP">
-                                                        <rect key="frame" x="137" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="152.5" y="0.0" width="75" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="3">
@@ -185,7 +185,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLF-5a-Jdh">
-                                                        <rect key="frame" x="205" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="228.5" y="0.0" width="75" height="36"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -202,10 +202,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="E2r-X5-Vvp">
-                                                <rect key="frame" x="0.0" y="110" width="273" height="36"/>
+                                                <rect key="frame" x="0.0" y="110.5" width="303.5" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22V-wM-BXA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663793103446" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="0">
@@ -216,7 +216,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAM-zH-btJ">
-                                                        <rect key="frame" x="68" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="76" y="0.0" width="75.5" height="36"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.32828663790000001" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                         <state key="normal" title=".">
@@ -227,7 +227,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aui-ja-P3W">
-                                                        <rect key="frame" x="137" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="152.5" y="0.0" width="75" height="36"/>
                                                         <color key="backgroundColor" red="0.65490196078431373" green="0.35686274509803922" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="15"/>
                                                         <state key="normal" title="C">
@@ -238,7 +238,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-JA-2UQ">
-                                                        <rect key="frame" x="205" y="0.0" width="67.5" height="36"/>
+                                                        <rect key="frame" x="228.5" y="0.0" width="75" height="36"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -262,7 +262,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Rub-Qh-KAl" secondAttribute="bottom" id="5s1-mb-Sl9"/>
                             <constraint firstItem="Rub-Qh-KAl" firstAttribute="height" secondItem="S3S-Oj-5AN" secondAttribute="height" id="QMM-ho-CRc"/>
-                            <constraint firstItem="Rub-Qh-KAl" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" multiplier="0.85" constant="1" id="VgZ-Zk-3bM"/>
+                            <constraint firstItem="Rub-Qh-KAl" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" multiplier="0.945" constant="1" id="VgZ-Zk-3bM"/>
                             <constraint firstAttribute="trailing" secondItem="Rub-Qh-KAl" secondAttribute="trailing" id="f1o-vO-dLi"/>
                         </constraints>
                     </view>
