@@ -11,11 +11,13 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
 
+  @IBOutlet var outterStackView: UIStackView!
   @IBOutlet var billLabel: UILabel!
   @IBOutlet var tipLabel: UILabel!
 
   @IBOutlet var percentButtons: [UIButton]!
   @IBOutlet var percent15Button: UIButton!
+  @IBOutlet var zeroButton: UIButton!
 
   var tipPercent = 0.15
   var billAmount = 0.0
@@ -36,7 +38,18 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   override func viewDidLoad() {
     super.viewDidLoad()
     percent15Button.selected = true
-    view.updateConstraints()
+    onCalculatorButtonTapped(zeroButton)
+    print("vdl")
+  }
+
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    print("vwa")
+  }
+
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+    print("vda")
   }
 
   @IBAction func onPercentButtonTapped(sender: UIButton) {
@@ -50,6 +63,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   }
 
   @IBAction func onCalculatorButtonTapped(sender: UIButton) {
+
+    if billString == "" && sender.titleLabel?.text == "0" {
+      return
+    }
 
     if !billString.containsString(".") {
       billString += "\(sender.tag)"
@@ -87,12 +104,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     // If an error is encountered, use NCUpdateResult.Failed
     // If there's no update required, use NCUpdateResult.NoData
     // If there's an update, use NCUpdateResult.NewData
-
+    print("widgetPerformUpdateWithCompletionHandler")
     completionHandler(NCUpdateResult.NewData)
   }
 
   func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
     return UIEdgeInsetsZero
   }
+
 
 }
