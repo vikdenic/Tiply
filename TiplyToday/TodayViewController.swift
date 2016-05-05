@@ -38,8 +38,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   override func viewDidLoad() {
     super.viewDidLoad()
     percent15Button.selected = true
-
-    outterStackView.frame = view.frame
   }
 
   @IBAction func onPercentButtonTapped(sender: UIButton) {
