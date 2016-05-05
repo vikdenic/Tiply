@@ -54,11 +54,11 @@ class MainViewController: UIViewController {
   @IBAction func onArrowTapped(sender: UIButton) {
     if splitCount == 1 {
       if sender.tag == 1 {
-        splitCount++
+        splitCount += 1
       }
       return
     }
-    sender.tag == 0 ? splitCount-- : splitCount++
+    splitCount = sender.tag == 0 ? splitCount - 1 : splitCount + 1
   }
 
   @IBAction func onTipButtonTapped(sender: RoundButton) {
