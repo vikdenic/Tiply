@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9310378A1CD87BE200836FAC /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931037891CD87BE200836FAC /* Chameleon.framework */; };
 		9310378B1CD87BE200836FAC /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 931037891CD87BE200836FAC /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9397DC1B1CDC507700D9F2D6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9397DC191CDC507700D9F2D6 /* Fabric.framework */; };
+		9397DC1C1CDC507700D9F2D6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9397DC1A1CDC507700D9F2D6 /* Crashlytics.framework */; };
 		93BE2A081CD5642900956F44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE2A071CD5642900956F44 /* AppDelegate.swift */; };
 		93BE2A0A1CD5642900956F44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE2A091CD5642900956F44 /* MainViewController.swift */; };
 		93BE2A0D1CD5642900956F44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BE2A0B1CD5642900956F44 /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 /* Begin PBXFileReference section */
 		931037891CD87BE200836FAC /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		931037901CD8811100836FAC /* Raleway-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.otf"; sourceTree = "<group>"; };
+		9397DC191CDC507700D9F2D6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		9397DC1A1CDC507700D9F2D6 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		93BE2A041CD5642900956F44 /* Tiply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiply.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BE2A071CD5642900956F44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93BE2A091CD5642900956F44 /* MainViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -82,6 +86,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9310378A1CD87BE200836FAC /* Chameleon.framework in Frameworks */,
+				9397DC1C1CDC507700D9F2D6 /* Crashlytics.framework in Frameworks */,
+				9397DC1B1CDC507700D9F2D6 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +141,8 @@
 		93E35A201CD967F300AC2D4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9397DC191CDC507700D9F2D6 /* Fabric.framework */,
+				9397DC1A1CDC507700D9F2D6 /* Crashlytics.framework */,
 				931037891CD87BE200836FAC /* Chameleon.framework */,
 				93E35A211CD967F300AC2D4B /* NotificationCenter.framework */,
 			);
@@ -164,6 +172,7 @@
 				9310378C1CD87BE200836FAC /* Embed Frameworks */,
 				93E35A301CD967F300AC2D4B /* Embed App Extensions */,
 				93A8ECED1CDAE5300022835F /* ShellScript */,
+				9397DC181CDC4C8900D9F2D6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,6 +262,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9397DC181CDC4C8900D9F2D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 0ab16672c93474a83c728078cb9b8991188bb3ca b4a35c38831e6c0f4b760a3813633d5f1af80d88534389758f14b665c224d162";
+		};
 		93A8ECED1CDAE5300022835F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,6 +441,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Tiply/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -438,6 +461,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Tiply/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
