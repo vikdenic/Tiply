@@ -97,6 +97,16 @@ class MainViewController: UIViewController {
 extension MainViewController: UITextFieldDelegate {
 
   @IBAction func onBillTextFieldEdited(textField: UITextField) {
+
+    //if it's the first number entered
+    if textField.text!.characters.count == 1 {
+      if let someAmount = Double(String(textField.text!)) {
+        billAmount = someAmount
+        textField.text = "$" + textField.text!
+        return
+      }
+    }
+
     //update values
     if let someAmount = Double(String(textField.text!.characters.dropFirst())) {
       billAmount = someAmount
@@ -109,6 +119,7 @@ extension MainViewController: UITextFieldDelegate {
     if range.location != NSNotFound {
       return
     }
+    print(textField.text!)
     textField.text = "$" + textField.text!
   }
 
