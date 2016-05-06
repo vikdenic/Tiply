@@ -100,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				93BE2A061CD5642900956F44 /* Tiply */,
-				931037891CD87BE200836FAC /* Chameleon.framework */,
 				93E35A231CD967F300AC2D4B /* TiplyToday */,
 				93E35A201CD967F300AC2D4B /* Frameworks */,
 				93BE2A051CD5642900956F44 /* Products */,
@@ -121,8 +120,8 @@
 		93BE2A061CD5642900956F44 /* Tiply */ = {
 			isa = PBXGroup;
 			children = (
-				93BE2A0B1CD5642900956F44 /* Main.storyboard */,
 				93BE2A071CD5642900956F44 /* AppDelegate.swift */,
+				93BE2A0B1CD5642900956F44 /* Main.storyboard */,
 				93BE2A091CD5642900956F44 /* MainViewController.swift */,
 				93BE2A1B1CD583BE00956F44 /* RoundButton.swift */,
 				93BE2A0E1CD5642900956F44 /* Assets.xcassets */,
@@ -136,6 +135,7 @@
 		93E35A201CD967F300AC2D4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				931037891CD87BE200836FAC /* Chameleon.framework */,
 				93E35A211CD967F300AC2D4B /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -453,6 +453,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Viktor Denic (9YM25QUSQR)";
 				INFOPLIST_FILE = TiplyToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tiply.Tiply.Today;
 				PRODUCT_NAME = TiplyToday;
@@ -465,6 +466,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Viktor Denic (9YM25QUSQR)";
 				INFOPLIST_FILE = TiplyToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tiply.Tiply.Today;
 				PRODUCT_NAME = TiplyToday;

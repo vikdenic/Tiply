@@ -114,6 +114,10 @@ extension MainViewController: UITextFieldDelegate {
 
   func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
 
+    if billAmount == 0.0 && string == "0" {
+      return false
+    }
+
     let newString = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
     let separatedStrings = newString.componentsSeparatedByString(".")
 

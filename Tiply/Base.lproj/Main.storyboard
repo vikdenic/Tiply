@@ -48,14 +48,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lMM-DU-TbQ">
                                         <rect key="frame" x="0.0" y="130" width="600" height="167"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFx-5s-KTH">
-                                                <rect key="frame" x="213" y="0.0" width="175" height="68"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bill Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFx-5s-KTH">
+                                                <rect key="frame" x="194" y="0.0" width="214" height="68"/>
                                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="240" verticalCompressionResistancePriority="760" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tap here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-8z-XP1">
-                                                <rect key="frame" x="213" y="68" width="175" height="58"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="240" verticalCompressionResistancePriority="760" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter bill" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-8z-XP1">
+                                                <rect key="frame" x="194" y="68" width="214" height="58"/>
                                                 <color key="backgroundColor" red="0.50980392156862742" green="0.61176470588235299" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="32"/>
@@ -81,19 +81,19 @@
                                             <constraint firstItem="KsU-8z-XP1" firstAttribute="width" secondItem="DFx-5s-KTH" secondAttribute="width" id="POc-cD-vWK"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wML-U6-Ete">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wML-U6-Ete">
                                         <rect key="frame" x="0.0" y="297" width="600" height="147"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="% Gratuity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhn-dO-Oop">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="% Gratuity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhn-dO-Oop">
                                                 <rect key="frame" x="231" y="0.0" width="138" height="68"/>
                                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g4c-ef-Pza">
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g4c-ef-Pza">
                                                 <rect key="frame" x="10" y="68" width="580" height="79"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rno-gc-tY5" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rno-gc-tY5" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="79" height="79"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="32"/>
@@ -111,7 +111,7 @@
                                                             <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="74a-eA-JB8"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="1" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVx-s7-YSk" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVx-s7-YSk" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
                                                         <rect key="frame" x="167" y="0.0" width="79" height="79"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -132,7 +132,7 @@
                                                             <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPb-Rg-8gs"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj4-Ue-5jL" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
+                                                    <button opaque="NO" tag="2" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj4-Ue-5jL" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
                                                         <rect key="frame" x="334" y="0.0" width="79" height="79"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -153,7 +153,7 @@
                                                             <action selector="onTipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdv-tZ-6JA"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjJ-wk-OEI" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
+                                                    <button opaque="NO" tag="3" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjJ-wk-OEI" customClass="RoundButton" customModule="Tiply" customModuleProvider="target">
                                                         <rect key="frame" x="501" y="0.0" width="79" height="79"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -191,7 +191,7 @@
                                             </mask>
                                         </variation>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="75D-zw-irl">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="75D-zw-irl">
                                         <rect key="frame" x="0.0" y="444" width="600" height="137"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Split Between" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg2-j0-blD">
@@ -200,10 +200,10 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="16n-bF-H4b">
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="16n-bF-H4b">
                                                 <rect key="frame" x="195" y="68" width="211" height="69"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-pO-pRl">
+                                                    <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-pO-pRl">
                                                         <rect key="frame" x="0.0" y="18" width="33" height="33"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="33" id="IdF-EW-4id"/>
@@ -221,7 +221,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxt-ym-dOF">
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxt-ym-dOF">
                                                         <rect key="frame" x="178" y="18" width="33" height="33"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="33" id="9IS-lo-rU0"/>
